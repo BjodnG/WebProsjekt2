@@ -15,7 +15,7 @@ body {
 	background-color: white;
 	font-family: vollkorn_scregular;
 
-	margin: 0 0 217px;
+	margin: 0 0 417px;
 }
 
 #content{
@@ -78,7 +78,7 @@ a:hover{
 }
 
 .seksjon{
-	height: 600px;
+	height: 400px;
 }
 .seksjonsTekst{
 	display: inline-block;
