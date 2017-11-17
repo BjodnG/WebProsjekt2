@@ -9,8 +9,22 @@
 
 /*  HEADER */
 
+#header{
+	height: 6.5em;
+}
 
+#Logo{
+	float: left;
+	width: 40%;
+}
 
+#header-nav{
+	float: right;
+	width: 40%;
+}
+li{
+	float: left;
+}
 
 
 
