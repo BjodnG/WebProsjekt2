@@ -1,5 +1,17 @@
-#header-content{
+#content{
 	margin: auto;
     width: 70%;
     padding: 10px;
+}
+
+
+
+
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 644px;
+    height: 20px;
+    margin: 0 auto;
 }
