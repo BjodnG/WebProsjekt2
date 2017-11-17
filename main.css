@@ -1,10 +1,13 @@
 #content{
 	margin: auto;
     width: 70%;
-    padding: 10px;
+    padding: 1%;
+    background-color: blue;
 }
 
-
+body {
+	background-color: red;
+}
 
 
 
