@@ -22,6 +22,7 @@ body {
 	margin: auto;
     width: 70%;
     padding: 1%;
+
     background-color: white;
 }
 
@@ -98,6 +99,8 @@ a:hover{
  clear: left;
 }
 
+
+
 /*  FOOTER */
 
 #footer {
@@ -109,6 +112,7 @@ a:hover{
     bottom: 0;
     left: 0;
     margin: 0 auto;
+
 
     height: 217px;
     overflow:hidden;
@@ -126,4 +130,5 @@ a:hover{
 
 
 	font-size: 17.5px;
+
 }
