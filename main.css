@@ -1,12 +1,16 @@
+* {
+	font-family: Calibri;
+}
+
 body {
-	background-color: red;
+	background: "bakgrunn.jpg";
 }
 
 #content{
 	margin: auto;
     width: 70%;
     padding: 1%;
-    background-color: blue;
+    background-color:
 }
 
 
@@ -15,6 +19,32 @@ body {
 
 /*  MIDDLE */
 
+#middle {
+	height: 900px;
+	background-color:rgba(0, 0, 0, 0.5);
+}
+
+#middle p {
+	font-size: 100px;
+}
+
+#middle img {
+	
+	
+}
+
+.tekst{
+
+	width:60%;
+
+}
+.bilde{
+
+
+	float: right;
+	width: 35%;
+}
+
 
 /*  FOOTER */
 
@@ -22,4 +52,5 @@ body {
     position: absolute;
     bottom: 0;
     margin: 0 auto;
+    background-color: blue;'
 }
