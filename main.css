@@ -1,12 +1,28 @@
+@font-face {
+    font-family: 'vollkorn_scregular';
+    src: url('fonts/vollkornsc-regular-webfont.woff2') format('woff2'),
+         url('fonts/	vollkornsc-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+	position: relative;
+    min-height: 100%;
+}
 body {
-	background-color: red;
+	background-color: white;
+	font-family: vollkorn_scregular;
+
+	margin: 0 0 217px;
 }
 
 #content{
 	margin: auto;
     width: 70%;
     padding: 1%;
-    background-color: blue;
+    background-color: white;
 }
 
 
@@ -19,25 +35,95 @@ body {
 
 #Logo{
 	float: left;
-	width: 40%;
+	width: 60%;
+}
+#logoBilde{
+
+	max-height: 5.5em;
+
 }
 
 #header-nav{
 	float: right;
 	width: 40%;
+
+	font-size: 20px;
+}
+ul{
+	 list-style-type: none;
 }
 li{
 	float: left;
+	margin-left: 15px;
 }
-
+a:hover{
+	font-weight: bold;
+	cursor: pointer;
+}
 
 /*  MIDDLE */
 
+#middle{
+
+	min-height: 100%;
+	margin-bottom: -11.5em; 
+}
+#middle:after{
+	content: "";
+	display: block;
+}
+#middle h2{
+	text-align: center;
+}
+
+.seksjon{
+	height: 600px;
+}
+.seksjonsTekst{
+	display: inline-block;
+	float: left;
+	width: 60%;
+}
+.seksjonsBilde{
+	display: inline-block;
+	float: left;
+	width: 40%;
+}
+
+#kvittering{
+	max-width: 250px;
+}
+
+.stopFloat{
+ clear: left;
+}
 
 /*  FOOTER */
 
 #footer {
+	width: 100%;
+	background-color: #35393E;
+	color: white;
+
     position: absolute;
     bottom: 0;
+    left: 0;
     margin: 0 auto;
+
+    height: 217px;
+    overflow:hidden;
+}
+#footer-content{
+
+	margin: auto;
+    width: 70%;
+    padding: 1%;
+}
+.footer-box{
+	width: 33.33333%;
+	height: 11.5em; 
+	float: left;
+
+
+	font-size: 17.5px;
 }
