@@ -1,9 +1,12 @@
-
+body {
+	background-color: red;
+}
 
 #content{
 	margin: auto;
     width: 70%;
-    padding: 10px;
+    padding: 1%;
+    background-color: blue;
 }
 
 
@@ -12,6 +15,7 @@
 #header{
 	height: 6.5em;
 }
+
 
 #Logo{
 	float: left;
@@ -27,11 +31,7 @@ li{
 }
 
 
-
 /*  MIDDLE */
-
-
-
 
 
 /*  FOOTER */
