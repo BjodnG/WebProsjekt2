@@ -9,13 +9,17 @@
 
 html {
 	position: relative;
-    min-height: 100%;
 }
 body {
 	background-color: white;
 	font-family: vollkorn_scregular;
 
 	margin: 0 0 417px;
+}
+@media (max-width: 580px){
+	body{
+		margin: 0 0 617px;
+	}
 }
 
 #content{
@@ -25,42 +29,112 @@ body {
 
     background-color: white;
 }
+@media (max-width:1400px){
+	#content{
+	    width: 80%;
+	}
+}
+@media (max-width:1200px){
+	#content{
+	    width: 90%;
+	}
+}
 
+.inner{
+	display: inline-block;
+	text-align: left;
+}
 
 /*  HEADER */
 
 #header{
-	height: 6.5em;
+	height: 8em;
 }
 
 
 #Logo{
 	float: left;
-	width: 60%;
+	width: 30%;
+	text-align: left;
 }
-#logoBilde{
+.logoBilde{
 
 	max-height: 5.5em;
 
 }
 
 #header-nav{
-	float: right;
-	width: 40%;
-
+	height: auto;
+	float: left;
+	width: 70%;
+	text-align: right;
 	font-size: 20px;
+
+}
+#header-nav .inner{
+	margin-top: 50px;
 }
 ul{
-	 list-style-type: none;
+	padding: 0;
+	margin: 0;
+
+
+	list-style-type: none;
+	text-align:center;
 }
 li{
+
+	text-align: center;
+	vertical-align: middle;
+	line-height: 40px;     
+
+
+	width: 132px;
+	height: 40px;
+	padding-left: 0px;
 	float: left;
-	margin-left: 15px;
+
+}
+a{
+	
+	text-decoration: none;
+	color: black;
 }
 a:hover{
 	font-weight: bold;
-	cursor: pointer;
 }
+.sLink{
+	padding-left: 15px;
+}
+
+@media (max-width:670px){
+	#Logo{
+		width: 100%;
+		text-align: center;
+	}
+	#header-nav{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	#header-nav .inner{
+		margin-top: 10px;
+	}
+}
+@media (max-width:475px){
+
+	#header-nav{
+		margin-bottom: 50px;
+	}
+	li{
+		float: none;
+	}
+	.sLink{
+		padding-left: 0;
+	}
+}
+
+
 
 /*  MIDDLE */
 
@@ -70,29 +144,96 @@ a:hover{
 	margin-bottom: -11.5em; 
 }
 #middle:after{
-	content: "";
+	content: "";	 	
 	display: block;
 }
-#middle h2{
+#overskrift{
 	text-align: center;
+	max-width: 100%;
+}
+
+@media (max-width: 333px){
+	#overskrift h1{
+		font-size: 20px;
+	}	
+}
+@media (max-width: 215px){
+	#overskrift h1{
+		font-size: 15px;
+	}	
 }
 
 .seksjon{
-	height: 400px;
+	height: auto;
+	margin-bottom: 30px;
 }
 .seksjonsTekst{
+	text-align: center;
 	display: inline-block;
 	float: left;
 	width: 60%;
+
 }
+.seksjonsTekst .inner{
+	max-width: 80%;
+}
+
+@media (max-width:996px){
+	.seksjonsTekst .inner{
+	max-width: 100%;
+}
+}
+
 .seksjonsBilde{
+	margin-top: 45px;
+	text-align: center;
 	display: inline-block;
 	float: left;
 	width: 40%;
 }
+@media (max-width:1500px){
+	.seksjonsTekst{
+		width: 70%;
+	}
+	.seksjonsBilde{
+		width: 30%;
+	}
+}
+@media (max-width:996px){
+	.seksjonsTekst{
+		width: 60%;
+	}
+	.seksjonsBilde{
+		width: 40%;
+		float: inherit;
+	}
+}
+@media (max-width:700px){
+	.seksjonsTekst{
+		width: 100%;
+	}
+	.seksjonsBilde{
+		width: 100%;
+		float: inherit;
+	}
+}
 
-#kvittering{
-	max-width: 250px;
+.kvittering{
+	width: 250px;
+}
+@media (max-width:996px){
+	.kvittering{
+		width: 200px;
+		display: block;
+    margin-left: auto;
+    margin-right: auto
+	}
+}
+@media (max-width:700px){
+	.kvittering{
+		width: 250px;
+		max-width: 80%;
+	}
 }
 
 .stopFloat{
@@ -113,8 +254,9 @@ a:hover{
     left: 0;
     margin: 0 auto;
 
+    padding-bottom: 30px;
 
-    height: 217px;
+    height: auto;
     overflow:hidden;
 }
 #footer-content{
@@ -123,12 +265,107 @@ a:hover{
     width: 70%;
     padding: 1%;
 }
-.footer-box{
-	width: 33.33333%;
-	height: 11.5em; 
-	float: left;
+@media (max-width: 815px){
+	#footer-content{
+	    width: 100%;
+	}
+}
 
+.footer-box{
+
+
+	float: left;
+	text-align: center;
 
 	font-size: 17.5px;
 
+}
+.flef{
+	width: 20%;
+}
+.fmid{
+	width: 60%;
+	
+}
+
+
+#footer-text{
+	display: inline-block;
+	text-align: left;
+}
+
+
+.social{
+	width: 20%;
+	margin-top: 10px;
+}
+
+@media (max-width: 670px){
+	.flef{
+
+		width: 25%;
+	}
+
+	.fmid{
+		width: 50%;
+		
+	}
+	.social{
+		width: 25%;
+	}
+}
+@media (max-width: 580px){
+	.flef{
+		width: 100%;
+
+	}
+
+	.fmid{
+		width: 100%;
+		margin-bottom: 20px;
+
+	}
+	.social{
+		width: 100%;
+
+	}
+}
+
+
+
+/* SOCIAL MEDIA*/
+
+.fa {
+  padding: 15px;
+  font-size: 25px;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
 }
