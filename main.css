@@ -1,18 +1,18 @@
 @font-face {
-    font-family: 'vollkorn_scregular';
-    src: url('fonts/vollkornsc-regular-webfont.woff2') format('woff2'),
-         url('fonts/	vollkornsc-regular-webfont.woff') format('woff');
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-regular.ttf');
     font-weight: normal;
     font-style: normal;
-
 }
 
 html {
 	position: relative;
 }
 body {
-	background-color: white;
-	font-family: vollkorn_scregular;
+	font-family: sans-serif;
+        font-family: Roboto;
+        background-color: white;
+	
 
 	margin: 0 0 417px;
 }
@@ -20,6 +20,15 @@ body {
 	body{
 		margin: 0 0 617px;
 	}
+        
+        nav ul li {
+            display: block;
+        }
+        
+        nav ul li a {
+            padding-right: 0px;
+            padding-left: 0px;
+        }
 }
 
 #content{
@@ -85,26 +94,25 @@ ul{
 li{
 	width: 138px;
 	height: 40px;
+        display: inline;
 }
 a{
 
 	text-align: center;
 	vertical-align: middle;
 	line-height: 40px;     
-
-
-	
-	padding-left: 0px;
+        padding-right: 20px;
+        padding-left: 20px;
+        text-decoration: none;
+	color: black;
+	//padding-left: 0px;
 	float: left;
 
 }
-a{
-	
-	text-decoration: none;
-	color: black;
-}
+
 a:hover{
-	font-weight: bold;
+        background-color: #000;
+        color: #fff;
 }
 .sLink{
 	padding-left: 15px;
