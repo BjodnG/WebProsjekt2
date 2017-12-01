@@ -32,9 +32,10 @@ body {
 }
 
 #content{
+
 	margin: auto;
     width: 70%;
-    padding: 1%;
+    padding-bottom: 1%;
 
     background-color: white;
 }
@@ -56,8 +57,26 @@ body {
 
 /*  HEADER */
 
+#header-background{
+	background-color: #35393E;
+
+	height: 6em;
+	left: 0;
+	right: 0;
+
+	z-index: -1;
+	position: absolute;
+
+
+}
 #header{
-	height: 8em;
+	background-color: #35393E;
+	margin-bottom: 5em;
+}
+#header-content{
+
+	height: 6em;
+	
 }
 
 
@@ -73,6 +92,7 @@ body {
 }
 
 #header-nav{
+
 	height: auto;
 	float: left;
 	width: 70%;
@@ -97,28 +117,35 @@ li{
         display: inline;
 }
 a{
-
 	text-align: center;
 	vertical-align: middle;
 	line-height: 40px;     
-        padding-right: 20px;
-        padding-left: 20px;
-        text-decoration: none;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
 	color: black;
-	//padding-left: 0px;
 	float: left;
 
 }
-
+#header-nav a{
+	color: white;
+}
 #header-nav a:hover{
-        background-color: #000;
-        color: #fff;
+	color: black;
+    background-color: white;
+
 }
 .sLink{
 	padding-left: 15px;
 }
 
-@media (max-width:670px){
+@media (max-width:852px){
+
+	#header-background, #header-content{
+
+		height: 9em;
+		
+	}
 	#Logo{
 		width: 100%;
 		text-align: center;
@@ -132,18 +159,30 @@ a{
 		margin-top: 10px;
 	}
 }
-@media (max-width:475px){
+@media (max-width:602px){
 
+	
+	
+	.sLink{
+		padding-left: 0;
+	}
+}
+@media (max-width:590px){
+
+	#header-background, #header-content{
+
+		height: 17em;
+		
+	}
 	#header-nav{
 		margin-bottom: 50px;
 	}
 	a{
 		float: none;
 	}
-	.sLink{
-		padding-left: 0;
-	}
 }
+
+
 
 
 
@@ -186,7 +225,25 @@ a{
 
 }
 .seksjonsTekst .inner{
-	max-width: 80%;
+	max-width: 65%;
+}
+
+.seksjonRef{
+
+	margin-top: 20px;
+	text-align: center;
+	display: inline-block;
+
+	width: 100%
+}
+.seksjonRef .inner{
+	text-align: center;
+
+
+}
+.seksjonRef a:hover{
+        background-color: #000;
+        color: #fff;
 }
 
 @media (max-width:996px){
@@ -231,6 +288,13 @@ a{
 
 .kvittering{
 	width: 250px;
+}
+.mess{
+	width: 75%;
+	max-width: 75%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 @media (max-width:996px){
 	.kvittering{
