@@ -116,19 +116,22 @@ li{
 	height: 40px;
         display: inline;
 }
+
 a{
 	text-align: center;
 	vertical-align: middle;
-	line-height: 40px;     
+	line-height: 40px;
+
     padding-right: 20px;
     padding-left: 20px;
     text-decoration: none;
 	color: black;
-	float: left;
-
 }
+
+
 #header-nav a{
 	color: white;
+	float: left;
 }
 #header-nav a:hover{
 	color: black;
@@ -321,9 +324,21 @@ a{
 	}
 }
 
+#sekFire .inner p{
+	text-align: left;
+}
+#sekFire .inner a{
+	padding: 10px;
+	text-align: left;
+}
+
+
+
 .stopFloat{
  clear: left;
 }
+
+
 
 #app{
 	max-height: 390px;
@@ -381,7 +396,9 @@ a{
 	display: inline-block;
 	text-align: left;
 }
-
+#footer-text .inner{
+	min-height: 200px;
+}
 
 .social{
 	width: 20%;
