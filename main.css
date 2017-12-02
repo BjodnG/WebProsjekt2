@@ -315,6 +315,9 @@ a{
  clear: left;
 }
 
+#app{
+	max-height: 390px;
+}
 
 
 /*  FOOTER */
