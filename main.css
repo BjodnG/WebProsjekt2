@@ -221,11 +221,11 @@ a{
 	text-align: center;
 	display: inline-block;
 	float: left;
-	width: 60%;
+	width: 55%;
 
 }
 .seksjonsTekst .inner{
-	max-width: 65%;
+	max-width: 70%;
 }
 
 .seksjonRef{
@@ -245,11 +245,15 @@ a{
         background-color: #000;
         color: #fff;
 }
-
+@media (max-width:1500px){
+	.seksjonsTekst .inner{
+		max-width: 80%;
+	}
+}
 @media (max-width:996px){
 	.seksjonsTekst .inner{
-	max-width: 100%;
-}
+		max-width: 100%;
+	}
 }
 
 .seksjonsBilde{
@@ -257,22 +261,22 @@ a{
 	text-align: center;
 	display: inline-block;
 	float: left;
-	width: 40%;
+	width: 45%;
 }
 @media (max-width:1500px){
 	.seksjonsTekst{
-		width: 70%;
+		width: 65%;
 	}
 	.seksjonsBilde{
-		width: 30%;
+		width: 35%;
 	}
 }
 @media (max-width:996px){
 	.seksjonsTekst{
-		width: 60%;
+		width: 55%;
 	}
 	.seksjonsBilde{
-		width: 40%;
+		width: 45%;
 		float: inherit;
 	}
 }
@@ -296,9 +300,15 @@ a{
     margin-left: auto;
     margin-right: auto
 }
+@media (max-width:1500px){
+	.mess{
+		width: 85%;
+		max-width: 85%;
+	}
+}
 @media (max-width:996px){
 	.kvittering{
-		width: 200px;
+		width: 250px;
 		display: block;
     margin-left: auto;
     margin-right: auto
@@ -306,7 +316,7 @@ a{
 }
 @media (max-width:700px){
 	.kvittering{
-		width: 250px;
+		width: 60%;
 		max-width: 80%;
 	}
 }
